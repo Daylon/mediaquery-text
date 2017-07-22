@@ -1,0 +1,17 @@
+/*
+* Following issue#1
+* Test case for nested font-face within a media-query
+*/
+
+@media screen {
+    a {
+        color: blue !important;
+        background: red;
+    }
+    @font-face {
+        font-family: 'Arial2';
+    }
+}
+@font-face {
+    font-family: 'Tahoma2';
+}
