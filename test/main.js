@@ -15,7 +15,7 @@ describe('mediaquery-text', function() {
     });
 });
 
-describe('mediaquery-text', function() {
+describe('font-face-mediaquery', function() {
     it('Should return Media Query containing a font-face rule', function(done) {
         var mediaQueries = mediaQueryText(String(fs.readFileSync(path.join('test', 'fixtures', 'font-face.css'))));
         mediaQueries.should.be.equal(String(fs.readFileSync(path.join('test', 'expected', 'font-face.css'))));
